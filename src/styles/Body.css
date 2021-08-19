@@ -1,0 +1,348 @@
+
+
+.searchBar{
+    margin-top: 60px;
+    background-color: #f2f4f5;
+    padding: 40px 0;
+    width: 100%;
+}
+.searchBar .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search input{
+    position: relative;
+    width: 100%;
+    height: 65px;
+    padding-left: 70px;
+    font-size: 16px;
+    border: none;
+}
+.search input:focus{
+    outline: none;
+}
+.search .fa-search {
+    position: absolute;
+    z-index: 1;
+    margin: 14px 8px;
+    font-size: 26px;
+    font-weight: 300;
+}
+.location{
+    position: relative;
+}
+.location .loc-btn {
+    width: 100%;
+    height: 65px;
+    border: none;
+    background: #fff;
+    border-left: 1px solid #d5d7d8;
+    font-size: 18px;
+    color: #000001;
+    padding:0 47px;
+}
+.location .loc-btn:focus{
+    outline: none;
+}
+.location .fa-map-marker-alt {
+    position: absolute;
+    margin-left: -235px;
+    margin-top: 16px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.searchBtn .btn-search{
+    width: 165px;
+    height: 65px;
+    border: none;
+    background-color: #fff;
+    border-left: 1px solid #d5d7d8;
+    font-size: 18px;
+}
+.searchBtn .btn-search:hover{
+    background: #002f34;
+    color: #fff;
+}
+.searchBtn .btn-search .fa-search{
+    font-size: 22px;
+    font-weight: 400;
+    margin:0 10px ;
+}
+@media(max-width:786px){
+    .search input{
+        padding-left: 40px;
+        font-size: 10px;
+        height: 45px;
+    }
+    .search .fa-search{
+        font-size: 20px;
+        margin:  10px;
+    }
+    .location .loc-btn{
+        height: 45px;
+        font-size: 10px;
+    }
+    .searchBtn .btn-search{
+        height: 45px;
+        font-size: 17px;
+    }
+    .searchBtn .btn-search .fa-search{
+        font-size: 10px;
+    }
+}
+/*---bosh toifalar---*/
+.main-category{
+    background-color: #fff;
+}
+.main-category .container{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.main-category .container h1{
+    font-size: 26px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.categorys{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;   
+}
+.category{
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    padding: 15px;
+}
+.category .icon{
+    background-color: rgb(243, 183, 183);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    cursor: pointer;
+}
+.category .icon img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+}
+.category h3 {
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.category h3:hover{
+    background: rgb(71, 71, 71);
+}
+@media(max-width:786px){
+    .categorys {
+        display: flex;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .main-category .container {
+        width: 100%;
+    }
+    .category .icon {
+        width: 90px;
+        height: 90px;
+    }
+    .category .icon img {
+        width: 81px;
+        height: 81px;
+    }
+}
+/*--card--*/
+.main{
+    background: #f2f4f5;
+}
+.main .container{
+    margin-top: 50px;
+}
+.main .container h1{
+    color: #002f34;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+}
+.main-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+}
+.card{
+    margin: 10px;
+    width: 30%;
+    height: 450px;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: .5s ease;
+}
+.card:hover{
+    transform: scale(98%);
+}
+.card-img img{
+    width:99%;
+    height: 300px;
+    padding: 10px;
+}
+.card-paragraph h4{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.card-paragraph h4:hover{
+    background-color:#3e7592;
+}
+.card-paragraph h5{
+    color: rgb(160, 160, 160);
+    padding: 10px ;
+    font-family: 100;
+}
+.card-paragraph{
+    position: relative;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.text h2{
+    background: rgb(28, 4, 241);
+    position: absolute;
+    left: 50px;
+}
+.text .btnHeart{
+    border: none;
+    background-color: #fff;
+}
+.btnHeart:focus {
+    color: red;
+  }
+.see-All{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .2s ease;
+    margin-bottom: 100px;
+}
+.see-All:hover{
+    border: 6px solid;
+}
+@media(max-width:786px){
+    .main{
+        width: 100%;
+    }
+    .main .container{
+        width: 100%;
+    }
+    .main-card{
+        padding: 0;
+    }
+    .card{
+        width: 46%;
+        padding: 0;
+    }
+
+}
+/*--OLX bilan biznesingizni boshlang--*/
+.your-Business{
+    background-color: #002f34;
+}
+.business{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.text-business{
+    padding: 0 40px;
+    font-weight: 100;
+}
+.detail{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #002f34;
+    transition: .5s ease;
+}
+.detail:hover{
+    background-color: #002f34;
+    color: #fff;
+    border: 3px solid #fff;
+}
+@media(max-width:786px){
+    .detail {
+        width: 150px;
+    }
+}
+@media(max-width:580px){
+    .detail {
+        width: 100px;
+    }
+}
+/*--olx--*/
+.olx{
+    background-color:  #cbf7ee;
+    color:#002f34 ;
+}
+.olx .container h1{
+    font-size: 36px;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding-top: 50px;
+    text-align: center;
+}
+.olx .container p{
+    text-align: center;
+    padding: 70px;
+    padding-bottom: 50px;
+}
+/*--service--*/
+.service {
+    background: #f2f4f5;
+    color: #003859;
+    padding-top: 50px;
+    border-bottom: 1px solid #003859;
+}
+.service h1{
+    font-size: 18px;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+
+}
+.service h1 span{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+/*--Media--*/

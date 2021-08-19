@@ -1,0 +1,104 @@
+header{
+    font-family: 'Poppins', sans-serif;
+    background: #002f34;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+.logo h1{
+    font-size: 36px;
+    font-weight: 900;
+    color: #24e5db ;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-nav h3{
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0 5px;
+}
+.navbar-nav h3:nth-child(2){
+    border-left: 1px solid #668284;
+    color:#668284 ;
+}
+.navbar-nav h3:nth-child(1){
+    color: #fff;
+}
+.navbar-nav .heart-icon{
+    color: #fff;
+    font-size: 26px;
+    margin: 10px 20px;
+}
+.heart-icon:hover{
+    color: #668284;
+}
+.myContact a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+.myContact :hover{
+    color: #668284;
+}
+.myContact a h2{
+    color: #fff;
+    font-size: 18px;
+    font-family:'Poppins' sans-serif;
+    font-weight: 700;
+    padding: 20px 2px;
+}
+.user-icon{
+    font-size: 26px;
+    color: #fff;
+    margin: 15px 5px;
+}
+.btn-send{
+    width: 150px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    background-color: #fff;
+    color:#668284 ;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn-send:hover{
+    border: 5px solid #fff;
+    background-color: #002f34;
+    color: #fff;
+}
+.menu-icon{
+    display: none;
+}
+@media(max-width:768px){
+    header{
+        width: 100%;
+        position: relative;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 26px;
+        color: #fff;
+        margin: 15px 5px;
+    }
+    
+}
